@@ -5,6 +5,7 @@
   --mainDark: #232528;
   --mainYellow:#2bff00;
   --lightYellow: #e7eb0f;
+  --mainGreen: #74b72e;
 
 }
 
@@ -20,7 +21,7 @@ body{
 }
 .text-blue{
   color: var(--mainBlue);
-
+  text-transform: uppercase;
 }
 
 .text-bright{
