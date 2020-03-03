@@ -39,11 +39,16 @@ export default class Details extends Component {
                                 <p className="text-muted">{info}</p>
                                 {/**Buttons */}
                                 <div>
-                                <Link to="/Products">
+                                <Link to="/">
                                 <ButtonContainer>back to products</ButtonContainer>
                                 </Link>
                                 <ButtonContainer
-                                    disabled={inCart? true:false}>
+                                    cart
+                                    disabled={inCart? true:false}
+                                    onClick={()=>{
+                                        value.addToCart(id);
+                                        value.openModal(id)
+                                    }}>
                                         {inCart?'inCart' : "add to cart"}
                                 </ButtonContainer>
                                 </div>
